@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.jonaxel.example.testparseaplication.SubirImagen">
+
+    <ImageView
+        android:id="@+id/image_retrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Get Image"
+        android:onClick="obtenerImagen"/>
+    <EditText
+        android:id="@+id/text_channel_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escibe el canal a enviar"/>
+    <Button
+        android:onClick="subirImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Send image"/>
+
+</LinearLayout>
